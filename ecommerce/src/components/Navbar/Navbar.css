@@ -1,0 +1,43 @@
+._nav {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+.nav-bar{
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    ._nav {
+        position: relative;
+    }
+    .nav-bar{
+        display: grid;
+        position: absolute;
+        top: 48px;
+        height: 500px;
+        width: 100%;
+        z-index: 3;
+        margin: 0;
+        left: -100%;
+        background-color:darkslategrey ;
+    }
+    .active{
+        left: 0;
+        /* transform: translate(-50%, 50%); */
+        display: grid;
+        position: absolute;
+        top: 48px;
+        height: 500px;
+        width: 100%;
+        z-index: 3;
+        margin: 0;
+        left: 00%;
+        background-color:rgb(3, 9, 9) 
+    }
+}
